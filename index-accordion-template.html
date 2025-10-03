@@ -1,0 +1,63 @@
+<!-- Template for remaining accordion items - copy these to replace the remaining rows -->
+
+<!-- Row 2 (alternate) -->
+<div class="accordion-item">
+    <div class="data-row alternate">
+        <div class="label-cell accordion-trigger" data-accordion="accordion-2">
+            <a href="#" class="link-button">Inclusion</a>
+            <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="data-carousel">
+            <div class="data-track">
+                <div class="data-cell" data-status="excluded" data-plan-index="0">
+                    <img src="assets/excluded.svg" alt="" class="icon">
+                    <span>Excluded</span>
+                </div>
+                <div class="data-cell" data-status="restricted" data-plan-index="1">
+                    <img src="assets/restricted.svg" alt="" class="icon">
+                    <span class="restricted-link">Restricted</span>
+                </div>
+                <div class="data-cell" data-status="included" data-plan-index="2">
+                    <img src="assets/included.svg" alt="" class="icon">
+                    <span>Included</span>
+                </div>
+                <div class="data-cell" data-status="included" data-plan-index="3">
+                    <img src="assets/included.svg" alt="" class="icon">
+                    <span>Included</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-content" id="accordion-2">
+        <div class="accordion-detail-row">
+            <div class="detail-label-cell">
+                <p class="detail-text">Additional information about this coverage</p>
+            </div>
+            <div class="data-carousel">
+                <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                        <p class="detail-text">Not covered</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                        <p class="detail-text">Limited to $2,000 annually</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                        <p class="detail-text">Full coverage up to $8,000</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                        <p class="detail-text">Full coverage up to $12,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Use similar structure for rows 3-8, changing:
+- data-accordion="accordion-X" (increment X for each row)
+- id="accordion-X" (must match data-accordion)
+- data-status and icons based on the original row
+- detail text content for each plan
+-->

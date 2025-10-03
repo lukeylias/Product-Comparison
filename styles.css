@@ -1,0 +1,835 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: #ffffff;
+  color: #262626;
+  line-height: 1.5;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+  background: white;
+}
+
+.container {
+  width: 1320px;
+  max-width: 100%;
+  padding: 88px 0 0;
+}
+
+.tabpanel {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.heading-container {
+  margin-bottom: 0;
+}
+
+.heading-xl {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.72px;
+  color: #144a38;
+}
+
+.table-wrapper {
+  width: 100%;
+  max-width: 1056px; /* 264px empty cell + 264px * 3 plans */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+  display: none;
+}
+
+.header-carousel-controls {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  position: absolute;
+  left: 240px; /* Start before the carousel */
+  right: -24px; /* Extend past the carousel */
+  z-index: 5;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+.header-carousel-controls .carousel-btn {
+  pointer-events: auto; /* Re-enable clicks on buttons */
+}
+
+.header-carousel-controls .carousel-indicators {
+  display: none; /* Hide pagination dots */
+}
+
+.carousel-btn {
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #144a38;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  background: #f8f8f8;
+  border-color: #144a38;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e2e2e2;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.carousel-indicator.active {
+  background: #144a38;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Header Row */
+.header-row {
+  display: flex;
+  background: #f8f8f8;
+  min-height: 191px;
+  align-items: stretch;
+}
+
+.header-cell.empty {
+  width: 264px;
+  background: white;
+}
+
+.header-carousel {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.header-track {
+  display: flex;
+  transition: transform 0.3s ease-out;
+  width: 100%;
+}
+
+.header-cell {
+  width: 264px;
+  min-width: 264px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 12px 12px;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.plan-name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  color: #000000;
+}
+
+.price-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.price-amount {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.72px;
+  color: #262626;
+}
+
+.price-cents {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  color: #262626;
+  padding-top: 1px;
+}
+
+.price-period {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  color: #262626;
+}
+
+.price-period strong {
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #82e578;
+  border: 1.5px solid transparent;
+  border-radius: 9999px;
+  padding: 16px 32px;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.32px;
+  color: #144a38;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #6dd563;
+}
+
+/* Section Row */
+
+.section-row {
+  display: flex;
+  height: 57.4px;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+
+.section-cell {
+  width: 264px;
+  padding: 15.25px 1px 9.15px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  white-space: nowrap;
+  align-self: center;
+  padding-right: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  color: #144a38;
+}
+
+.empty-cell {
+  width: 264px;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  align-items: center;
+}
+
+/* Data Rows */
+.data-row {
+  display: flex;
+  min-height: 65px;
+  align-items: stretch;
+}
+
+.data-row.alternate {
+  background: #f8f8f8;
+}
+
+.label-cell {
+  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px 0 16px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.label-cell.accordion-trigger {
+  cursor: pointer;
+}
+
+.label-cell.accordion-trigger:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.accordion-chevron {
+  color: #144a38;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.accordion-trigger.active .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  width: 264px;
+  display: none; /* Hidden on desktop, shown on mobile */
+}
+
+.accordion-content.active {
+  max-height: 500px;
+}
+
+.accordion-content-data {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  width: 100%;
+}
+
+.accordion-content-data.active {
+  max-height: 500px;
+}
+
+.accordion-detail-row {
+  display: flex;
+  min-height: 65px;
+  align-items: stretch;
+  background: white;
+}
+
+.detail-label-cell {
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border-bottom: 1px solid #e2e2e2;
+  background: white;
+}
+
+.detail-cell {
+  width: 264px;
+  min-width: 264px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.detail-text {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  color: #666;
+  margin: 0;
+}
+
+.detail-list {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  color: #666;
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.detail-list li {
+  margin: 4px 0;
+}
+
+.learn-more-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  color: #144a38;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.learn-more-link:hover {
+  opacity: 0.8;
+}
+
+.link-button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: #144a38;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  opacity: 0.8;
+}
+
+.inclusion-label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: #144a38;
+}
+
+.data-carousel {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.data-track {
+  display: flex;
+  transition: transform 0.3s ease-out;
+  width: 100%;
+}
+
+.data-cell {
+  width: 264px;
+  min-width: 264px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  color: #262626;
+}
+
+.data-cell .icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.data-cell span {
+  font-weight: 400;
+}
+
+.data-cell[data-status="restricted"] span.restricted-link {
+  font-weight: 600;
+  color: #144a38;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+}
+
+/* Desktop - Show 3 plans with carousel */
+@media (min-width: 1025px) {
+  .header-carousel-controls {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .carousel-btn-wrapper {
+    display: contents; /* Flatten wrapper on desktop */
+  }
+
+  .mobile-pagination {
+    display: none !important; /* Hide mobile pagination on desktop */
+  }
+
+  .header-cell.empty {
+    width: 264px;
+    background: white;
+  }
+
+  .header-row {
+    position: relative;
+  }
+
+  .header-carousel,
+  .data-carousel {
+    overflow: hidden;
+    width: calc(264px * 3); /* Show exactly 3 plans */
+  }
+
+  .header-track,
+  .data-track {
+    gap: 0;
+  }
+
+  .section-row,
+  .data-row {
+    max-width: 1056px; /* Match table width */
+  }
+
+  /* Desktop accordion structure */
+  .data-row .accordion-content {
+    display: none; /* Hide label detail on desktop */
+  }
+
+  .accordion-content-data {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .accordion-content-data .detail-label-cell {
+    width: 264px;
+    flex-shrink: 0;
+  }
+
+  .accordion-content-data .data-carousel {
+    overflow: hidden;
+    width: calc(264px * 3);
+    flex: 1;
+  }
+}
+
+/* Tablet - Show 2 plans with carousel */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .table-wrapper {
+    max-width: 792px; /* 264px empty cell + 264px * 2 plans */
+  }
+
+  .header-carousel-controls {
+    display: flex;
+    left: 264px;
+    right: 0;
+    flex-direction: row;
+  }
+
+  .carousel-btn-wrapper {
+    display: contents; /* Flatten wrapper on tablet */
+  }
+
+  .mobile-pagination {
+    display: none !important; /* Hide mobile pagination on tablet */
+  }
+
+  .header-cell.empty {
+    width: 264px;
+    background: white;
+  }
+
+  .header-row {
+    position: relative;
+  }
+
+  .header-carousel,
+  .data-carousel {
+    overflow: hidden;
+    width: calc(264px * 2); /* Show exactly 2 plans on tablet */
+  }
+
+  .header-track,
+  .data-track {
+    gap: 0;
+  }
+
+  .section-row,
+  .data-row {
+    max-width: 792px; /* Match tablet table width */
+  }
+
+  .section-row {
+    width: 100%;
+  }
+
+  .empty-cell:nth-child(4) {
+    display: none; /* Hide 4th empty cell on tablet */
+  }
+
+  /* Tablet accordion structure */
+  .data-row .accordion-content {
+    display: none; /* Hide label detail on tablet */
+  }
+
+  .accordion-content-data {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .accordion-content-data .detail-label-cell {
+    width: 264px;
+    flex-shrink: 0;
+  }
+
+  .accordion-content-data .data-carousel {
+    overflow: hidden;
+    width: calc(264px * 2);
+    flex: 1;
+  }
+}
+
+/* Mobile - Show 2 plans with stacked layout */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+
+  .table-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .heading-xl {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .tabpanel {
+    gap: 32px;
+  }
+
+  /* Sticky headers on mobile */
+  .header-row {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: auto;
+    background: white;
+    margin-bottom: 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-cell.empty {
+    display: none; /* Hide empty cell on mobile */
+  }
+
+  .header-carousel {
+    width: 100%;
+  }
+
+  .header-carousel-controls {
+    display: flex;
+    position: relative;
+    left: 0;
+    transform: none;
+    padding: 8px 0 0;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-track {
+    display: flex;
+    gap: 8px;
+  }
+
+  .header-cell {
+    width: calc(50% - 4px);
+    min-width: calc(50% - 4px);
+    flex: 0 0 calc(50% - 4px);
+    padding: 8px;
+    gap: 16px;
+    background: white;
+    border: none;
+    box-shadow: none;
+  }
+
+  .plan-name {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.28px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  /* Mobile stacked layout for data rows */
+  .section-row {
+    display: none;
+  }
+
+  .section-row .pagination-text {
+    display: none; /* Hide in section row on mobile */
+  }
+
+  .header-carousel-controls .mobile-pagination {
+    display: block; /* Show in carousel controls on mobile */
+    padding: 8px 0 0;
+    font-size: 13px;
+    border: none;
+    height: auto;
+  }
+
+  .header-carousel-controls .carousel-btn-wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  /* Hide mobile pagination on desktop */
+  .mobile-pagination {
+    display: none;
+  }
+
+  .data-row {
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .label-cell {
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid #e2e2e2;
+    background: white;
+  }
+
+  .data-carousel {
+    width: 100%;
+  }
+
+  .data-track {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .data-cell {
+    width: calc(50% - 4px);
+    min-width: calc(50% - 4px);
+    flex: 0 0 calc(50% - 4px);
+    padding: 16px 8px;
+  }
+
+  /* Mobile accordion structure */
+  .data-row .accordion-content {
+    display: block; /* Show detail label on mobile */
+    width: 100%;
+    order: 2; /* Position after label-cell */
+  }
+
+  .data-row .accordion-content .detail-label-cell {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .data-row .data-carousel {
+    order: 3; /* Position after accordion-content */
+  }
+
+  .accordion-content-data {
+    width: 100%;
+    order: 4; /* Position after data-carousel */
+    flex-direction: column;
+  }
+
+  .accordion-content-data .detail-label-cell {
+    display: none; /* Hide on mobile - use accordion-content instead */
+  }
+
+  .accordion-content-data .data-carousel {
+    width: 100%;
+  }
+
+  .accordion-content-data .data-track {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .detail-cell {
+    width: calc(50% - 4px);
+    min-width: calc(50% - 4px);
+    flex: 0 0 calc(50% - 4px);
+    padding: 16px 8px;
+  }
+
+  /* Mobile accordion detail rows */
+  .accordion-detail-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .accordion-detail-row .data-carousel {
+    width: 100%;
+  }
+
+  .accordion-detail-row .data-track {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+}
+
+/* Very small mobile */
+@media (max-width: 480px) {
+  .price-amount {
+    font-size: 28px;
+  }
+
+  .header-cell,
+  .data-cell {
+    padding: 12px 4px;
+  }
+
+  .btn-primary {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
