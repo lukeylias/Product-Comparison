@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare what's coveed</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="tabpanel">
+          <div class="table-wrapper">
+            <!-- Header Row -->
+            <div class="header-row">
+              <div class="header-cell empty"></div>
+              <div class="header-carousel">
+                <div class="header-track">
+                  <div class="header-cell" data-plan-index="0">
+                    <div class="plan-info">
+                      <h3 class="plan-name">Basic Care Hospital Plus</h3>
+                      <div class="price-stack">
+                        <div class="price">
+                          <span class="price-amount">$19</span>
+                          <span class="price-cents">.23*</span>
+                        </div>
+                        <div class="price-period">
+                          <span>Per </span><strong>week</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-primary">Select cover</button>
+                  </div>
+                  <div class="header-cell" data-plan-index="1">
+                    <div class="plan-info">
+                      <h3 class="plan-name">Basic Care Hospital Plus</h3>
+                      <div class="price-stack">
+                        <div class="price">
+                          <span class="price-amount">$19</span>
+                          <span class="price-cents">.23*</span>
+                        </div>
+                        <div class="price-period">
+                          <span>Per </span><strong>week</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-primary">Select cover</button>
+                  </div>
+                  <div class="header-cell" data-plan-index="2">
+                    <div class="plan-info">
+                      <h3 class="plan-name">Basic Care Hospital Plus</h3>
+                      <div class="price-stack">
+                        <div class="price">
+                          <span class="price-amount">$19</span>
+                          <span class="price-cents">.23*</span>
+                        </div>
+                        <div class="price-period">
+                          <span>Per </span><strong>week</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-primary">Select cover</button>
+                  </div>
+                  <div class="header-cell" data-plan-index="3">
+                    <div class="plan-info">
+                      <h3 class="plan-name">Basic Care Hospital Plus</h3>
+                      <div class="price-stack">
+                        <div class="price">
+                          <span class="price-amount">$19</span>
+                          <span class="price-cents">.23*</span>
+                        </div>
+                        <div class="price-period">
+                          <span>Per </span><strong>week</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-primary">Select cover</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Controls -->
+              <div class="header-carousel-controls">
+                <div class="carousel-btn-wrapper">
+                  <button
+                    class="carousel-btn carousel-prev"
+                    aria-label="Previous plan"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <div class="carousel-indicators"></div>
+                  <button
+                    class="carousel-btn carousel-next"
+                    aria-label="Next plan"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+                <span
+                  class="pagination-text mobile-pagination"
+                  id="mobilePaginationText"
+                  >Showing covers 1-2 of 4</span
+                >
+              </div>
+            </div>
+
+            <!-- Section Header Row -->
+            <div class="section-row">
+              <div class="section-cell">
+                <h2 class="section-title">Inclusions</h2>
+              </div>
+              <span class="pagination-text" id="paginationText"
+                >Showing covers 1-3 of 4</span
+              >
+            </div>
+
+            <!-- Data Rows -->
+            <div class="accordion-item">
+              <div class="data-row">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="included"
+                      data-plan-index="0"
+                      data-accordion="accordion-1"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Dental surgery - Included</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="included"
+                      data-plan-index="1"
+                      data-accordion="accordion-1"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Dental surgery - Included</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="included"
+                      data-plan-index="2"
+                      data-accordion="accordion-1"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Dental surgery - Included</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="included"
+                      data-plan-index="3"
+                      data-accordion="accordion-1"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Dental surgery - Included</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-1-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="data-row alternate">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="excluded"
+                      data-plan-index="0"
+                      data-accordion="accordion-2"
+                    >
+                      <img src="assets/excluded.svg" alt="" class="icon" />
+                      <span>Joint reconstructions - Excluded</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="restricted"
+                      data-plan-index="1"
+                      data-accordion="accordion-2"
+                    >
+                      <img src="assets/restricted.svg" alt="" class="icon" />
+                      <span class="restricted-link">Joint reconstructions - Restricted</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="included"
+                      data-plan-index="2"
+                      data-accordion="accordion-2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Joint reconstructions - Included</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="data-cell accordion-trigger"
+                      data-status="included"
+                      data-plan-index="3"
+                      data-accordion="accordion-2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Joint reconstructions - Included</span>
+                      <svg
+                        class="accordion-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 7.5L10 12.5L15 7.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-2-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">
+                        Hospital treatment for surgery to the teeth and gums. For
+                        example:
+                      </p>
+                      <ul class="detail-list">
+                        <li>surgery to remove wisdom teeth, and</li>
+                        <li>dental implant surgery.</li>
+                      </ul>
+                      <a href="#" class="learn-more-link">Learn more</a>
+                      <p class="detail-text" style="margin-top: 16px;">
+                        <strong>Waiting period:</strong><br />12 Month(s) (2
+                        Month(s) for ailments / conditions that are not
+                        pre-existing)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="data-row">
+                <div
+                  class="label-cell accordion-trigger"
+                  data-accordion="accordion-3"
+                >
+                  <span class="inclusion-label">Inclusion</span>
+                  <svg
+                    class="accordion-chevron"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="accordion-content" id="accordion-3">
+                  <div class="detail-label-cell">
+                    <p class="detail-text">Additional coverage details</p>
+                  </div>
+                </div>
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell"
+                      data-status="excluded"
+                      data-plan-index="0"
+                    >
+                      <img src="assets/excluded.svg" alt="" class="icon" />
+                      <span>Excluded</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="1"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="3"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-3-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">No coverage available</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">Basic coverage included</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">Standard coverage included</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">Premium coverage included</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="data-row alternate">
+                <div
+                  class="label-cell accordion-trigger"
+                  data-accordion="accordion-4"
+                >
+                  <span class="inclusion-label">Inclusion</span>
+                  <svg
+                    class="accordion-chevron"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="accordion-content" id="accordion-4">
+                  <div class="detail-label-cell">
+                    <p class="detail-text">Coverage restrictions apply</p>
+                  </div>
+                </div>
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell"
+                      data-status="excluded"
+                      data-plan-index="0"
+                    >
+                      <img src="assets/excluded.svg" alt="" class="icon" />
+                      <span>Excluded</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="restricted"
+                      data-plan-index="1"
+                    >
+                      <img src="assets/restricted.svg" alt="" class="icon" />
+                      <span class="restricted-link">Restricted</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="3"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-4-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">Not available</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">Restricted to $1,500 per year</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">Full coverage up to $6,000</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">Full coverage up to $10,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="data-row">
+                <div
+                  class="label-cell accordion-trigger"
+                  data-accordion="accordion-5"
+                >
+                  <span class="inclusion-label">Inclusion</span>
+                  <svg
+                    class="accordion-chevron"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="accordion-content" id="accordion-5">
+                  <div class="detail-label-cell">
+                    <p class="detail-text">Coverage details</p>
+                  </div>
+                </div>
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell"
+                      data-status="excluded"
+                      data-plan-index="0"
+                    >
+                      <img src="assets/excluded.svg" alt="" class="icon" />
+                      <span>Excluded</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="1"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="3"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-5-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">Not covered</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">Coverage up to $3,000</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">Coverage up to $7,500</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">Coverage up to $12,500</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="data-row alternate">
+                <div
+                  class="label-cell accordion-trigger"
+                  data-accordion="accordion-6"
+                >
+                  <span class="inclusion-label">Inclusion</span>
+                  <svg
+                    class="accordion-chevron"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="accordion-content" id="accordion-6">
+                  <div class="detail-label-cell">
+                    <p class="detail-text">Additional restrictions may apply</p>
+                  </div>
+                </div>
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell"
+                      data-status="excluded"
+                      data-plan-index="0"
+                    >
+                      <img src="assets/excluded.svg" alt="" class="icon" />
+                      <span>Excluded</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="restricted"
+                      data-plan-index="1"
+                    >
+                      <img src="assets/restricted.svg" alt="" class="icon" />
+                      <span class="restricted-link">Restricted</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="3"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-6-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">Not available</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">
+                        Limited coverage - $2,500 annually
+                      </p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">Full coverage - $9,000 annually</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">
+                        Full coverage - $15,000 annually
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="data-row">
+                <div
+                  class="label-cell accordion-trigger"
+                  data-accordion="accordion-7"
+                >
+                  <span class="inclusion-label">Inclusion</span>
+                  <svg
+                    class="accordion-chevron"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="accordion-content" id="accordion-7">
+                  <div class="detail-label-cell">
+                    <p class="detail-text">Coverage information</p>
+                  </div>
+                </div>
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell"
+                      data-status="excluded"
+                      data-plan-index="0"
+                    >
+                      <img src="assets/excluded.svg" alt="" class="icon" />
+                      <span>Excluded</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="1"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="3"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-7-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">Not included in this plan</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">Basic coverage available</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">Enhanced coverage available</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">
+                        Comprehensive coverage available
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="data-row alternate">
+                <div
+                  class="label-cell accordion-trigger"
+                  data-accordion="accordion-8"
+                >
+                  <span class="inclusion-label">Inclusion</span>
+                  <svg
+                    class="accordion-chevron"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="accordion-content" id="accordion-8">
+                  <div class="detail-label-cell">
+                    <p class="detail-text">Final coverage details</p>
+                  </div>
+                </div>
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div
+                      class="data-cell"
+                      data-status="excluded"
+                      data-plan-index="0"
+                    >
+                      <img src="assets/excluded.svg" alt="" class="icon" />
+                      <span>Excluded</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="restricted"
+                      data-plan-index="1"
+                    >
+                      <img src="assets/restricted.svg" alt="" class="icon" />
+                      <span class="restricted-link">Restricted</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="2"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                    <div
+                      class="data-cell"
+                      data-status="included"
+                      data-plan-index="3"
+                    >
+                      <img src="assets/included.svg" alt="" class="icon" />
+                      <span>Included</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content-data" id="accordion-8-data">
+                <div class="data-carousel">
+                  <div class="data-track">
+                    <div class="detail-cell" data-plan-index="0">
+                      <p class="detail-text">Not available</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="1">
+                      <p class="detail-text">Restricted - $1,800 limit</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="2">
+                      <p class="detail-text">Full coverage - $8,500 limit</p>
+                    </div>
+                    <div class="detail-cell" data-plan-index="3">
+                      <p class="detail-text">Full coverage - $14,000 limit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
